@@ -32,7 +32,9 @@ set notimeout
 
 syntax enable
 set background=dark
-set breakindent
+if has('breakindent')
+    set breakindent
+endif
 colorscheme native
 
 set guifont=Meslo\ LG\ M\ 10
