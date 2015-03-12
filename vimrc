@@ -29,6 +29,11 @@ set hlsearch
 set ttimeout
 set ttimeoutlen=250
 set notimeout
+let mapleader = ","
+
+set hlsearch
+set incsearch
+nnoremap <leader><space> :noh<cr>
 
 syntax enable
 set background=dark
@@ -40,7 +45,6 @@ colorscheme native
 set guifont=Meslo\ LG\ M\ 10
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
-let mapleader = ","
 map 0 ^
 nnoremap n nzz
 nnoremap N Nzz
