@@ -85,3 +85,6 @@
 [submodule "bundle/vim-togglelist"]
 	path = bundle/vim-togglelist
 	url = https://github.com/slara/vim-togglelist.git
+[submodule "bundle/closetag.vim"]
+	path = bundle/closetag.vim
+	url = https://github.com/vim-scripts/closetag.vim.git

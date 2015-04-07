@@ -37,7 +37,7 @@ nnoremap <leader><space> :noh<cr>
 
 syntax enable
 set background=dark
-if has('breakindent')
+if has("breakindent")
     set breakindent
 endif
 colorscheme native
