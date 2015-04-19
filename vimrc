@@ -114,7 +114,7 @@ nnoremap <C-F11> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR
 nnoremap <C-F12> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
 nnoremap <C-F9> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_python_checkers= ['flake8']
 let g:syntastic_python_flake8_args='--ignore=F403,E501,E711'
 let g:syntastic_always_populate_loc_list = 1
@@ -173,6 +173,9 @@ let g:airline_right_alt_sep = ''
 
 " unicode symbols
 let g:airline_symbols.branch = "⎇"
+
+" vim-jsx
+let g:jsx_ext_required = 0
 
 "Scrolling
 " :map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
