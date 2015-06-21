@@ -35,6 +35,14 @@ set hlsearch
 set incsearch
 nnoremap <leader><space> :noh<cr>
 
+" clipboard yank and paste
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
+
 syntax enable
 set background=dark
 if has("breakindent")
@@ -90,6 +98,9 @@ nnoremap <up> <C-w>k
 nnoremap <down> <C-w>j
 nnoremap <left> <C-w>h
 nnoremap <right> <C-w>l
+
+set splitbelow
+set splitright
 
 " Activate Hardtime mode
 let g:hardtime_default_on = 0
