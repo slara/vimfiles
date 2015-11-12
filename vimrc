@@ -64,6 +64,17 @@ map <F4> :Make<CR>
 
 nmap s <Plug>(easymotion-s)
 
+
+"python with virtualenv support
+py << EOF
+import os
+import sys
+if 'VIRTUAL_ENV' in os.environ:
+  project_base_dir = os.environ['VIRTUAL_ENV']
+  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+  execfile(activate_this, dict(__file__=activate_this))
+EOF
+
 let g:session_autosave = "yes"
 let g:session_autoload = "no"
 let g:session_directory = "~/.vimsessions"
@@ -127,7 +138,7 @@ nnoremap <C-F9> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_python_checkers= ['flake8']
-let g:syntastic_python_flake8_args='--ignore=F403,E501,E711'
+let g:syntastic_python_flake8_args='--ignore=F403,E501,E711,E402'
 let g:syntastic_always_populate_loc_list = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.swf
@@ -195,3 +206,5 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
+
+
