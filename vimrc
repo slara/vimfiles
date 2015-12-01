@@ -110,6 +110,9 @@ nnoremap <down> <C-w>j
 nnoremap <left> <C-w>h
 nnoremap <right> <C-w>l
 
+nnoremap <C-Right> gt
+nnoremap <C-Left> gT
+
 set splitbelow
 set splitright
 
@@ -206,5 +209,8 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
+
+autocmd VimEnter * NERDTreeClose
+autocmd VimLeave * NERDTreeClose
 
 
