@@ -1,6 +1,6 @@
 let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
-"call add(g:pathogen_disabled, 'csapprox')
+call add(g:pathogen_disabled, 'csapprox')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -9,7 +9,7 @@ set runtimepath+=~/.vim/ultisnips_rep
 set nocompatible
 set mousehide
 set mouse=a
-set ttymouse=xterm2
+"set ttymouse=xterm2
 set showcmd
 set shell=bash
 filetype plugin on
@@ -212,5 +212,4 @@ nnoremap <C-b> :CtrlPBuffer<CR>
 
 autocmd VimEnter * NERDTreeClose
 autocmd VimLeave * NERDTreeClose
-
-
+set t_ut=
