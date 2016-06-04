@@ -124,9 +124,6 @@ let delimitMate_expand_cr=1
 
 map <C-t> :TagbarToggle<CR>
 
-" autoclose if NERDTree is the last open window
-map <F2> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
@@ -210,6 +207,4 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
 
-autocmd VimEnter * NERDTreeClose
-autocmd VimLeave * NERDTreeClose
 set t_ut=
