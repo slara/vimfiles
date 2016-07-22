@@ -208,3 +208,5 @@ nnoremap <C-b> :CtrlPBuffer<CR>
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
 set t_ut=
+
+set spelllang=es
