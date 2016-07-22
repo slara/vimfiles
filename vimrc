@@ -53,7 +53,6 @@ colorscheme native
 set guifont=Meslo\ LG\ M\ 10
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
-map 0 ^
 nnoremap n nzz
 nnoremap N Nzz
 nnoremap <F8>  :set cmdheight=1<CR> <C-w>=
@@ -206,5 +205,6 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
 set t_ut=
