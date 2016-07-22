@@ -210,3 +210,4 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set t_ut=
 
 set spelllang=es
+let g:pandoc#modules#disabled = ["folding"]
