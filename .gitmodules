@@ -109,3 +109,6 @@
 [submodule "bundle/vim-pandoc-syntax"]
 	path = bundle/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
+[submodule "bundle/vim-instant-markdown.git"]
+	path = bundle/vim-instant-markdown.git
+	url = git@github.com:suan/vim-instant-markdown.git
