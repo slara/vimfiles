@@ -45,9 +45,7 @@ vmap <leader>P "+P
 
 syntax enable
 set background=dark
-if has("breakindent")
-    set breakindent
-endif
+set breakindent
 colorscheme native
 
 set guifont=Meslo\ LG\ M\ 10
@@ -211,3 +209,4 @@ set t_ut=
 
 set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
+set sessionoptions+=resize,winpos
