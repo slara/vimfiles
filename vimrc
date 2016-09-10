@@ -1,6 +1,7 @@
 let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'csapprox')
+call add(g:pathogen_disabled, 'vim-pandoc')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -210,3 +211,4 @@ set t_ut=
 set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
+call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
