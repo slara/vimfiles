@@ -153,7 +153,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 nnoremap <leader>jd :YcmCompleter GoToDefinitionElseDeclaration<CR>
 set completeopt-=preview
-let g:ycm_auto_trigger = 1
+let g:ycm_auto_trigger = 0
 let g:ycm_add_preview_to_completeopt = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
