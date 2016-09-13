@@ -106,3 +106,6 @@
 [submodule "bundle/vim-pandoc-syntax"]
 	path = bundle/vim-pandoc-syntax
 	url = https://github.com/vim-pandoc/vim-pandoc-syntax.git
+[submodule "bundle/supertab.git"]
+	path = bundle/supertab.git
+	url = git@github.com:ervandew/supertab.git

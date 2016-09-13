@@ -2,6 +2,7 @@ let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'csapprox')
 call add(g:pathogen_disabled, 'vim-pandoc')
+call add(g:pathogen_disabled, 'YouCompleteMe')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -31,6 +32,7 @@ set ttimeout
 set ttimeoutlen=250
 set notimeout
 let mapleader = ","
+set gcr=n:blinkon0
 
 set hlsearch
 set incsearch
@@ -63,15 +65,15 @@ map <F4> :Make<CR>
 nmap s <Plug>(easymotion-s)
 
 
-"python with virtualenv support
-py << EOF
-import os
-import sys
-if 'VIRTUAL_ENV' in os.environ:
-  project_base_dir = os.environ['VIRTUAL_ENV']
-  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-  execfile(activate_this, dict(__file__=activate_this))
-EOF
+" "python with virtualenv support
+" py << EOF
+" import os
+" import sys
+" if 'VIRTUAL_ENV' in os.environ:
+"   project_base_dir = os.environ['VIRTUAL_ENV']
+"   activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+"   execfile(activate_this, dict(__file__=activate_this))
+" EOF
 
 let g:session_autosave = "yes"
 let g:session_autoload = "no"
