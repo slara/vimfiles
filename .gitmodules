@@ -109,3 +109,9 @@
 [submodule "bundle/supertab.git"]
 	path = bundle/supertab.git
 	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/neocomplete.vim"]
+	path = bundle/neocomplete.vim
+	url = git@github.com:Shougo/neocomplete.vim.git
+[submodule "bundle/jedi-vim"]
+	path = bundle/jedi-vim
+	url = git@github.com:davidhalter/jedi-vim.git
