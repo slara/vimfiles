@@ -137,7 +137,7 @@ nnoremap <C-F9> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 
 let g:syntastic_javascript_checkers = ['jsxhint']
 let g:syntastic_python_checkers= ['flake8']
-let g:syntastic_python_flake8_args='--ignore=F403,E501,E711,E402'
+let g:syntastic_python_flake8_args='--ignore=F403,E501,E711,E402,F405'
 let g:syntastic_always_populate_loc_list = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.swf
