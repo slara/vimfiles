@@ -2,7 +2,7 @@ let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'csapprox')
 call add(g:pathogen_disabled, 'vim-pandoc')
-call add(g:pathogen_disabled, 'YouCompleteMe')
+"call add(g:pathogen_disabled, 'YouCompleteMe')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -135,7 +135,7 @@ nnoremap <C-F11> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR
 nnoremap <C-F12> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
 nnoremap <C-F9> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
 
-let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_python_checkers= ['flake8']
 let g:syntastic_python_flake8_args='--ignore=F403,E501,E711,E402,F405'
 let g:syntastic_always_populate_loc_list = 1
@@ -169,9 +169,8 @@ function! g:UltiSnips_Complete()
     return ""
 endfunction
 
-au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-e>"
+let g:UltiSnipsListSnippets="<tab>"
 
 let g:airline_theme='murmur'
 let g:airline#extensions#enabled = 1
