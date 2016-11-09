@@ -2,7 +2,7 @@ let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'csapprox')
 call add(g:pathogen_disabled, 'vim-pandoc')
-"call add(g:pathogen_disabled, 'YouCompleteMe')
+call add(g:pathogen_disabled, 'YouCompleteMe')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -207,3 +207,5 @@ set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
+
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'

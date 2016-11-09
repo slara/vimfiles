@@ -109,3 +109,6 @@
 [submodule "bundle/supertab.git"]
 	path = bundle/supertab.git
 	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = git@github.com:posva/vim-vue
