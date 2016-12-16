@@ -52,7 +52,7 @@ set background=dark
 set breakindent
 colorscheme native
 
-set guifont=Meslo\ LG\ M\ 10
+set guifont=Meslo\ LG\ S\ 11
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
 nnoremap n nzz
@@ -155,24 +155,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 let g:UltiSnipsExpandTrigger="<C-e>"
 
-function! g:UltiSnips_Complete()
-    call UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res == 0
-        if pumvisible()
-            return "\<C-n>"
-        else
-            call UltiSnips#JumpForwards()
-            if g:ulti_jump_forwards_res == 0
-               return "\<TAB>"
-            endif
-        endif
-    endif
-    return ""
-endfunction
-
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsListSnippets="<tab>"
-
 let g:airline_theme='murmur'
 let g:airline#extensions#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -208,5 +190,3 @@ set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
-
-let g:ycm_path_to_python_interpreter = '/usr/bin/python'

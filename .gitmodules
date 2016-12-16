@@ -114,4 +114,4 @@
 	url = git@github.com:posva/vim-vue
 [submodule "bundle/supertab"]
 	path = bundle/supertab
-	url = https://github.com/ervandew/supertab
+	url = https://github.com/ervandew/supertab.git
