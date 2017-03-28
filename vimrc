@@ -51,7 +51,10 @@ vmap <leader>P "+P
 
 syntax enable
 set background=dark
-set breakindent
+
+if version >= 740
+    set breakindent
+endif
 
 colorscheme native
 
@@ -185,7 +188,10 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
+if version >= 740
+    set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+endif
 
 set t_ut=
 
