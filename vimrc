@@ -35,6 +35,8 @@ set notimeout
 let mapleader = ","
 set gcr=n:blinkon0
 
+" set scrolloff=20
+
 set hlsearch
 set incsearch
 nnoremap <leader><space> :noh<cr>
@@ -50,9 +52,10 @@ vmap <leader>P "+P
 syntax enable
 set background=dark
 set breakindent
+
 colorscheme native
 
-set guifont=Meslo\ LG\ S\ 11
+set guifont=Meslo\ LG\ S\ 10
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
 nnoremap n nzz
@@ -157,7 +160,7 @@ let g:UltiSnipsExpandTrigger="<C-e>"
 
 let g:airline_theme='murmur'
 let g:airline#extensions#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 set laststatus=2
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
