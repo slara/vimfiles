@@ -23,7 +23,6 @@ set vb
 set wildmenu
 set autoread
 set noswapfile
-set clipboard+=unnamed
 set number
 set relativenumber
 set hlsearch
@@ -38,20 +37,12 @@ set hlsearch
 set incsearch
 nnoremap <leader><space> :noh<cr>
 
-" clipboard yank and paste
-vmap <leader>y "+y
-vmap <leader>d "+d
-nmap <leader>p "+p
-nmap <leader>P "+P
-vmap <leader>p "+p
-vmap <leader>P "+P
-
 syntax enable
 set background=dark
 set breakindent
 colorscheme native
 
-set guifont=Meslo\ LG\ S\ 11
+set guifont=Meslo\ LG\ S\ 10
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
 nnoremap n nzz
@@ -189,3 +180,4 @@ set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
+set clipboard=unnamed
