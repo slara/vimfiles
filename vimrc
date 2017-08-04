@@ -2,7 +2,8 @@ let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'csapprox')
 call add(g:pathogen_disabled, 'vim-pandoc')
-call add(g:pathogen_disabled, 'YouCompleteMe')
+call add(g:pathogen_disabled, 'ultisnips')
+call add(g:pathogen_disabled, 'vim-snippets')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -33,13 +34,19 @@ set notimeout
 let mapleader = ","
 set gcr=n:blinkon0
 
+" set scrolloff=20
+
 set hlsearch
 set incsearch
 nnoremap <leader><space> :noh<cr>
 
 syntax enable
 set background=dark
-set breakindent
+
+if version >= 740
+    set breakindent
+endif
+
 colorscheme native
 
 set guifont=Meslo\ LG\ S\ 10
@@ -147,7 +154,7 @@ let g:UltiSnipsExpandTrigger="<C-e>"
 
 let g:airline_theme='murmur'
 let g:airline#extensions#enabled = 1
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 set laststatus=2
 if !exists('g:airline_symbols')
   let g:airline_symbols = {}
@@ -172,7 +179,10 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
+if version >= 740
+    set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+endif
 
 set t_ut=
 
