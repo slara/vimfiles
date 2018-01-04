@@ -118,3 +118,6 @@
 [submodule "bundle/vim-hybrid"]
 	path = bundle/vim-hybrid
 	url = https://github.com/w0ng/vim-hybrid.git
+[submodule "bundle/vim-mxml"]
+	path = bundle/vim-mxml
+	url = https://github.com/evandrewry/vim-mxml.git
