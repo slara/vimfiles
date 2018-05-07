@@ -49,7 +49,7 @@ endif
 
 colorscheme native
 
-set guifont=Meslo\ LG\ M\ 11
+set guifont=Meslo\ LG\ S\ 11
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
 nnoremap n nzz
