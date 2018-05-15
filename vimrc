@@ -47,7 +47,7 @@ if version >= 740
     set breakindent
 endif
 
-colorscheme native
+colorscheme onedark
 
 set guifont=Meslo\ LG\ S\ 11
 "set guifont=Source\ Code\ Pro\ Medium\ 11
@@ -152,7 +152,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 let g:UltiSnipsExpandTrigger="<C-e>"
 
-let g:airline_theme='murmur'
+let g:airline_theme='onedark'
 let g:airline#extensions#enabled = 1
 let g:airline_powerline_fonts = 0
 set laststatus=2

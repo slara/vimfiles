@@ -121,3 +121,6 @@
 [submodule "bundle/vim-mxml"]
 	path = bundle/vim-mxml
 	url = https://github.com/evandrewry/vim-mxml.git
+[submodule "bundle/onedark"]
+	path = bundle/onedark
+	url = git@github.com:joshdick/onedark.vim.git
