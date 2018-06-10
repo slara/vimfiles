@@ -40,16 +40,10 @@ set hlsearch
 set incsearch
 nnoremap <leader><space> :noh<cr>
 
-syntax enable
-set background=dark
 
 if version >= 740
     set breakindent
 endif
-
-colorscheme onedark
-
-set guifont=Meslo\ LG\ S\ 11
 "set guifont=Source\ Code\ Pro\ Medium\ 11
 
 nnoremap n nzz
@@ -152,7 +146,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 let g:UltiSnipsExpandTrigger="<C-e>"
 
-let g:airline_theme='onedark'
+let g:airline_theme='tender'
 let g:airline#extensions#enabled = 1
 let g:airline_powerline_fonts = 0
 set laststatus=2
@@ -177,7 +171,6 @@ let g:jsx_ext_required = 0
 " :map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
-set t_Co=256
 nnoremap <C-b> :CtrlPBuffer<CR>
 
 if version >= 740
@@ -191,3 +184,9 @@ let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
 set clipboard=unnamed
+
+syntax enable
+colorscheme tender
+highlight Visual guibg=#555555 ctermbg=DarkGray term=reverse
+
+set guifont=Meslo\ LG\ S\ 11

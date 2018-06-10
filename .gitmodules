@@ -124,3 +124,9 @@
 [submodule "bundle/onedark"]
 	path = bundle/onedark
 	url = git@github.com:joshdick/onedark.vim.git
+[submodule "bundle/afterglow"]
+	path = bundle/afterglow
+	url = git@github.com:danilo-augusto/vim-afterglow
+[submodule "bundle/tender"]
+	path = bundle/tender
+	url = git@github.com:jacoborus/tender.vim.git
