@@ -186,7 +186,7 @@ call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
 set clipboard=unnamed
 
 syntax enable
-colorscheme tender
+colorscheme native
 highlight Visual guibg=#555555 ctermbg=DarkGray term=reverse
 
 set guifont=Meslo\ LG\ S\ 11
