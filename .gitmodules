@@ -130,3 +130,6 @@
 [submodule "bundle/tender"]
 	path = bundle/tender
 	url = git@github.com:jacoborus/tender.vim.git
+[submodule "bundle/vim-pencil"]
+	path = bundle/vim-pencil
+	url = git@github.com:reedes/vim-pencil

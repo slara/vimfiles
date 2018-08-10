@@ -189,4 +189,4 @@ syntax enable
 colorscheme native
 highlight Visual guibg=#555555 ctermbg=DarkGray term=reverse
 
-set guifont=Meslo\ LG\ S\ 11
+set guifont=Meslo\ LG\ M\ 10
