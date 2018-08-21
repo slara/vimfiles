@@ -170,6 +170,9 @@ let g:jsx_ext_required = 0
 " :map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
 " :map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
 
+" Pencil
+let g:pencil#textwidth = 74
+
 let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <C-b> :CtrlPBuffer<CR>
 
@@ -189,4 +192,4 @@ syntax enable
 colorscheme native
 highlight Visual guibg=#555555 ctermbg=DarkGray term=reverse
 
-set guifont=Meslo\ LG\ M\ 10
+set guifont=Meslo\ LG\ M\ 11
