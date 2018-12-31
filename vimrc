@@ -4,6 +4,7 @@ call add(g:pathogen_disabled, 'csapprox')
 call add(g:pathogen_disabled, 'vim-pandoc')
 call add(g:pathogen_disabled, 'ultisnips')
 call add(g:pathogen_disabled, 'vim-snippets')
+call add(g:pathogen_disabled, 'MatchTag')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -192,4 +193,5 @@ syntax enable
 colorscheme native
 highlight Visual guibg=#555555 ctermbg=DarkGray term=reverse
 
-set guifont=Meslo\ LG\ M\ 11
+set guifont=Meslo\ LG\ M\ 12
+set shell=/usr/bin/zsh
