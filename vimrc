@@ -2,8 +2,8 @@ let g:pathogen_disabled = []
 "call add(g:pathogen_disabled, 'syntastic')
 call add(g:pathogen_disabled, 'csapprox')
 call add(g:pathogen_disabled, 'vim-pandoc')
-call add(g:pathogen_disabled, 'ultisnips')
-call add(g:pathogen_disabled, 'vim-snippets')
+"call add(g:pathogen_disabled, 'ultisnips')
+"call add(g:pathogen_disabled, 'vim-snippets')
 call add(g:pathogen_disabled, 'MatchTag')
 
 call pathogen#infect()
@@ -145,7 +145,11 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " trim leading whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
 
+" UltiSnips
+let g:UltiSnipsSnippetDirectories=["~/.vim/bundle/vim-snippets/snippets"]
 let g:UltiSnipsExpandTrigger="<C-e>"
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
 
 let g:airline_theme='tender'
 let g:airline#extensions#enabled = 1
