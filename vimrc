@@ -77,10 +77,11 @@ let g:session_persist_globals = ['&makeprg']
 let g:toggle_list_copen_command="Copen!"
 
 "set tabstop=2
-set autoindent
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+set autoindent
 
 "filetypes
 set lbr
