@@ -136,3 +136,6 @@
 [submodule "bundle/dart-vim-plugin"]
 	path = bundle/dart-vim-plugin
 	url = git@github.com:dart-lang/dart-vim-plugin
+[submodule "bundle/vim-python-pep8-indent"]
+	path = bundle/vim-python-pep8-indent
+	url = git@github.com:Vimjas/vim-python-pep8-indent
