@@ -1,6 +1,5 @@
 let g:pathogen_disabled = []
-"call add(g:pathogen_disabled, 'syntastic')
-call add(g:pathogen_disabled, 'csapprox')
+"call add(g:pathogen_disabled, 'vim-airline')
 call add(g:pathogen_disabled, 'vim-pandoc')
 "call add(g:pathogen_disabled, 'ultisnips')
 "call add(g:pathogen_disabled, 'vim-snippets')
