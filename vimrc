@@ -8,6 +8,7 @@ call add(g:pathogen_disabled, 'MatchTag')
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 set runtimepath+=~/.vim/ultisnips_rep
+set rtp+=~/.fzf
 
 set nocompatible
 set mousehide
@@ -195,7 +196,7 @@ set clipboard=unnamed
 
 syntax enable
 colorscheme native
-highlight Visual guibg=#555555 ctermbg=DarkGray term=reverse
+highlight Visual guibg=#444444 ctermbg=DarkGray term=reverse
 
 set guifont=Meslo\ LG\ M\ 12
 set shell=/usr/bin/zsh
