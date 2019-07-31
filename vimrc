@@ -198,5 +198,5 @@ syntax enable
 colorscheme native
 highlight Visual guibg=#444444 ctermbg=DarkGray term=reverse
 
-set guifont=Meslo\ LG\ M\ 12
+set guifont=Meslo\ LG\ M\ 13
 set shell=/usr/bin/zsh
