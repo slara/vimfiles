@@ -169,8 +169,8 @@ let g:airline_right_alt_sep = ''
 " unicode symbols
 let g:airline_symbols.branch = "⎇"
 
-" vim-jsx
-let g:jsx_ext_required = 0
+" vim-jsx-pretty
+let g:vim_jsx_pretty_highlight_close_tag = 1
 
 "Scrolling
 " :map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
@@ -187,6 +187,7 @@ if version >= 740
 endif
 
 set t_ut=
+
 
 set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
