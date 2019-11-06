@@ -188,12 +188,11 @@ endif
 
 set t_ut=
 
-
 set spelllang=es
 let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 syntax enable
 colorscheme native
