@@ -4,6 +4,7 @@ call add(g:pathogen_disabled, 'vim-pandoc')
 call add(g:pathogen_disabled, 'ultisnips')
 call add(g:pathogen_disabled, 'vim-snippets')
 call add(g:pathogen_disabled, 'MatchTag')
+call add(g:pathogen_disabled, 'vim-smoothie')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim

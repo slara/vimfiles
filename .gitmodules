@@ -145,3 +145,6 @@
 [submodule "bundle/vim-smoothie"]
 	path = bundle/vim-smoothie
 	url = https://github.com/psliwka/vim-smoothie.git
+[submodule "bundle/dart-vim-plugin.git"]
+	path = bundle/dart-vim-plugin.git
+	url = git@github.com:dart-lang/dart-vim-plugin.git
