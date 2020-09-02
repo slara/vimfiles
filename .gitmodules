@@ -145,3 +145,6 @@
 [submodule "bundle/vim-smoothie"]
 	path = bundle/vim-smoothie
 	url = https://github.com/psliwka/vim-smoothie.git
+[submodule "bundle/vim-zoom"]
+	path = bundle/vim-zoom
+	url = https://github.com/dhruvasagar/vim-zoom.git
