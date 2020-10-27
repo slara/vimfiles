@@ -151,3 +151,6 @@
 [submodule "bundle/vim-svelte"]
 	path = bundle/vim-svelte
 	url = https://github.com/evanleck/vim-svelte.git
+[submodule "bundle/vim-prettier"]
+	path = bundle/vim-prettier
+	url = https://github.com/prettier/vim-prettier

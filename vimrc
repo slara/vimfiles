@@ -202,3 +202,4 @@ highlight Visual guibg=#444444 ctermbg=DarkGray term=reverse
 set guifont=Meslo\ LG\ M\ 13
 set shell=/usr/bin/zsh
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|env\|git\|build'
+let g:prettier#config#trailing_comma = 'none'
