@@ -1,14 +1,7 @@
 let g:pathogen_disabled = []
-"call add(g:pathogen_disabled, 'vim-airline')
-call add(g:pathogen_disabled, 'vim-pandoc')
-call add(g:pathogen_disabled, 'ultisnips')
-call add(g:pathogen_disabled, 'vim-snippets')
-call add(g:pathogen_disabled, 'MatchTag')
-call add(g:pathogen_disabled, 'vim-smoothie')
 
 call pathogen#infect()
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-set runtimepath+=~/.vim/ultisnips_rep
 set rtp+=~/.fzf
 
 set nocompatible
@@ -110,15 +103,6 @@ nnoremap <C-Left> gT
 set splitbelow
 set splitright
 
-" Activate Hardtime mode
-let g:hardtime_default_on = 0
-
-" Expand <CR> on curly braces
-let delimitMate_expand_cr=1
-
-map <C-t> :TagbarToggle<CR>
-
-
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=L  "remove scrollbar
@@ -129,11 +113,6 @@ set guioptions-=e  "remove those ugly tabs
 nnoremap <C-F11> :if &go=~#'m'<Bar>set go-=m<Bar>else<Bar>set go+=m<Bar>endif<CR>
 nnoremap <C-F12> :if &go=~#'T'<Bar>set go-=T<Bar>else<Bar>set go+=T<Bar>endif<CR>
 nnoremap <C-F9> :if &go=~#'r'<Bar>set go-=r<Bar>else<Bar>set go+=r<Bar>endif<CR>
-
-let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_python_checkers= ['flake8']
-let g:syntastic_python_flake8_args='--ignore=F403,E501,E711,E402,F405'
-let g:syntastic_always_populate_loc_list = 1
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.swf
 set wildignore+=*/node_modules/*,*/bower_components/*,*/dist/*
@@ -146,12 +125,6 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " trim leading whitespaces on save
 autocmd BufWritePre * :%s/\s\+$//e
-
-" UltiSnips
-let g:UltiSnipsSnippetDirectories=["~/.vim/bundle/vim-snippets/snippets"]
-let g:UltiSnipsExpandTrigger="<C-e>"
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
 
 let g:airline_theme='tender'
 let g:airline#extensions#enabled = 1
@@ -173,13 +146,6 @@ let g:airline_symbols.branch = "⎇"
 " vim-jsx-pretty
 let g:vim_jsx_pretty_highlight_close_tag = 1
 
-"Scrolling
-" :map <C-U> <C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y><C-Y>
-" :map <C-D> <C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E><C-E>
-
-" Pencil
-let g:pencil#textwidth = 74
-
 let g:ackprg = 'ag --nogroup --nocolor --column'
 nnoremap <C-b> :CtrlPBuffer<CR>
 
@@ -190,7 +156,6 @@ endif
 set t_ut=
 
 set spelllang=es
-let g:pandoc#modules#disabled = ["folding"]
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
 set clipboard=unnamedplus
