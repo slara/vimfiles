@@ -88,3 +88,9 @@
 [submodule "bundle/tender"]
 	path = bundle/tender
 	url = https://github.com/jacoborus/tender.vim
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/preservim/tagbar.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/vim-syntastic/syntastic.git

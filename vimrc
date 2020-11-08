@@ -164,6 +164,10 @@ syntax enable
 colorscheme native
 highlight Visual guibg=#444444 ctermbg=DarkGray term=reverse
 
+highlight GitGutterAdd    guifg=#009900 ctermfg=2
+highlight GitGutterChange guifg=#bbbb00 ctermfg=3
+highlight GitGutterDelete guifg=#ff2222 ctermfg=1
+
 set guifont=Meslo\ LG\ M\ 13
 set shell=/usr/bin/zsh
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|env\|git\|build'
