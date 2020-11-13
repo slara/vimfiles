@@ -155,6 +155,8 @@ endif
 
 set t_ut=
 
+nmap <C-t> :TagbarToggle<CR>
+
 set spelllang=es
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
