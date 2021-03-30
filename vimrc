@@ -28,6 +28,7 @@ set ttimeoutlen=250
 set notimeout
 let mapleader = ","
 set gcr=n:blinkon0
+set linespace=4
 
 " set scrolloff=20
 
@@ -160,7 +161,12 @@ nmap <C-t> :TagbarToggle<CR>
 set spelllang=es
 set sessionoptions+=resize,winpos
 call system('wmctrl -i -b add,maximized_vert,maximized_horz -r '.v:windowid)
-set clipboard=unnamedplus
+
+if system('uname -s') == "Darwin\n"
+  set clipboard=unnamed "OSX
+else
+  set clipboard=unnamedplus "Linux
+endif
 
 syntax enable
 colorscheme native
@@ -171,6 +177,5 @@ highlight GitGutterChange guifg=#bbbb00 ctermfg=3
 highlight GitGutterDelete guifg=#ff2222 ctermfg=1
 
 set guifont=Meslo\ LG\ M\ 13
-set shell=/usr/bin/zsh
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|env\|git\|build'
 let g:prettier#config#trailing_comma = 'none'
